@@ -20,6 +20,14 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             max-width: 800px;
+            display: flex; /* Use flexbox layout */
+            align-items: center; /* Center vertically */
+            justify-content: center; /* Center horizontally */
+        }
+
+        .container .text {
+            padding-left: 20px; /* Add some space between the image and text */
+            text-align: left; /* Align text to the left */
         }
 
         .container h2 {
@@ -31,22 +39,19 @@
             line-height: 1.5;
         }
 
-        video {
-            width: 100%;
-            max-width: 800px;
+        img.image {
+            max-width: 50%; /* Set maximum width for the image */
             height: auto;
-            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>Trainers</h2>
-        <p>Having trouble cracking the code of human language and behavior? Fear not, furry friends! Our top-notch trainers are here to help bridge the communication gap. With quality training sessions, we'll have you and your human speaking the same language and understanding each other like never before!</p>
-        <video controls width="800" height="500" muted loop autoplay>
-            <source src="https://github.com/rishUW/rishuw.github.io/raw/2721a3c5a29c3fc6e0f1f45514f8e05d3bff6d57/videos/groomer.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <img src="images/pet-trainer-2.jpg" alt="Pet Trainer Image" class="image">
+        <div class="text">
+            <h2>Trainers</h2>
+            <p>Having trouble cracking the code of human language and behavior? Fear not, furry friends! Our top-notch trainers are here to help bridge the communication gap. With quality training sessions, we'll have you and your human speaking the same language and understanding each other like never before!</p>
+        </div>
     </div>
 </body>
 </html>
