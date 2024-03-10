@@ -4,13 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Pawsome World!</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: rgb(242, 200, 60);
+            text-align: center;
+        }
+
+        .container {
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: rgb(208, 55, 113);
+        }
+
+        video {
+            width: 80%;
+            border-radius: 10px;
+            margin: 20px auto;
+        }
+
+        button {
+            background-color: rgb(180, 181, 154);
+            color: rgb(49, 59, 48);
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: rgb(109, 123, 103);
+        }
+
+        img {
+            max-width: 80%;
+            border-radius: 10px;
+            margin: 20px auto;
+        }
+
+        audio {
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Pawsome World!</h1>
-    <video autoplay muted loop>
-        <source src="pawsome_video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <button onclick="window.location.href='content.html'">Explore More</button>
+    <div class="container">
+        <h1>Welcome to Pawsome World!</h1>
+        <video autoplay muted loop>
+            <source src="pawsome_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button onclick="window.location.href='content.html'">Explore More</button>
+    </div>
 </body>
 </html>
