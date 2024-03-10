@@ -93,6 +93,7 @@
             position: absolute;
             bottom: 10px;
             right: 10px;
+            filter: hue-rotate(140deg); /* Emerald green */
         }
     </style>
 </head>
@@ -101,7 +102,7 @@
         <img src="images/logo.png" alt="Pet Palooza Logo">
         <h1>Pet Palooza</h1>
         <script>
-            var audio = new Audio('https://github.com/rishUW/rishuw.github.io/blob/b74adbe2bb4c30c94e94704d6756ce7c1afd533e/audio/webpage-audio.wav?raw=true');
+            var audio = new Audio('https://github.com/rishUW/rishuw.github.io/raw/main/audio/webpage-audio.wav');
             audio.play();
         </script>
         <img src="images/icons/volume.png" class="volume-icon" onclick="toggleMute()" id="volume-icon">
@@ -120,8 +121,8 @@
     </div>
 
     <script>
-        const audio = document.getElementById('webpage-audio');
         const volumeIcon = document.getElementById('volume-icon');
+        var audio = new Audio('https://github.com/rishUW/rishuw.github.io/raw/main/audio/webpage-audio.wav');
 
         function toggleMute() {
             if (audio.volume === 0) {
