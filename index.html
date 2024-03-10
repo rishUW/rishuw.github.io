@@ -23,6 +23,10 @@
             color: rgb(208, 55, 113);
         }
 
+        h2 {
+            color: rgb(49, 59, 48);
+        }
+
         video {
             width: 80%;
             border-radius: 10px;
@@ -56,16 +60,49 @@
             margin-left: auto;
             margin-right: auto;
         }
+
+        .grid-container {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            margin-top: 50px;
+        }
+
+        .grid-item {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to Pawsome World!</h1>
+        <img src="images/logo.jpg" alt="Pet Palooza Logo" style="max-width: 200px;">
+        <h1>Pet Palooza</h1>
+        <h2>Welcome to Pawsome World!</h2>
         <video autoplay muted loop>
             <source src="pawsome_video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <button onclick="window.location.href='content.html'">Explore More</button>
+    </div>
+
+    <div class="container">
+        <h2>Meet Our Pawsome Team!</h2>
+        <div class="grid-container">
+            <div class="grid-item"><img src="images/pet-owner.jpg" alt="Pet Owner"></div>
+            <div class="grid-item"><img src="images/a-pet-trainer.jpg" alt="Pet Trainer"></div>
+            <div class="grid-item"><img src="images/dog-walker.jpg" alt="Dog Walker"></div>
+            <div class="grid-item"><img src="images/poodle-at-salon.jpg" alt="Poodle at Salon"></div>
+            <div class="grid-item"><img src="images/vet.jpg" alt="Veterinarian"></div>
+            <div class="grid-item"><img src="images/pet-friendly-2.jpg" alt="Pet-Friendly Place"></div>
+        </div>
     </div>
 </body>
 </html>
