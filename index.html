@@ -148,6 +148,7 @@
             if (audio.volume === 0) {
                 audio.volume = 1;
                 volumeIcon.src = 'images/icons/volume.png';
+                audio.play();
             } else {
                 audio.volume = 0;
                 volumeIcon.src = 'images/icons/mute.png';
