@@ -46,10 +46,7 @@
             background-color: rgb(255, 255, 255);
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 90%; /* Increase the max-width for the container */
-            width: 800px; /* Set a fixed width */
-            margin-left: auto; /* Center the container */
-            margin-right: auto; /* Center the container */
+            max-width: 800px;
         }
 
         .container h2 {
@@ -104,12 +101,20 @@
     <div class="banner">
         <img src="images/logo.png" alt="Pet Palooza Logo">
         <h1>Pet Palooza</h1>
+        <audio id="webpage-audio" src="https://github.com/rishUW/rishuw.github.io/raw/main/audio/webpage-audio.wav" autoplay loop></audio>
         <img src="images/icons/volume.png" class="volume-icon" onclick="toggleMute()" id="volume-icon">
     </div>
 
     <div class="container">
         <h2>Welcome to Pawsome World!</h2>
-        <h3 class="service-heading">Our Services</h3>
+        <video controls width="800" height="500">
+            <source src="videos/pet-palooza.gif" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="container">
+        <h2>Our Services</h2>
         <div class="grid-container">
             <div class="grid-item">
                 <h4>Owners</h4>
@@ -140,9 +145,9 @@
 
     <script>
         const volumeIcon = document.getElementById('volume-icon');
+        var audio = new Audio('https://github.com/rishUW/rishuw.github.io/raw/main/audio/webpage-audio.wav');
 
         function toggleMute() {
-            var audio = new Audio('https://github.com/rishUW/rishuw.github.io/raw/main/audio/webpage-audio.wav');
             if (audio.volume === 0) {
                 audio.volume = 1;
                 volumeIcon.src = 'images/icons/volume.png';
