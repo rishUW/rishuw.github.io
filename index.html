@@ -140,9 +140,9 @@
 
     <script>
         const volumeIcon = document.getElementById('volume-icon');
-        var audio = new Audio('https://github.com/rishUW/rishuw.github.io/raw/main/audio/webpage-audio.wav');
 
         function toggleMute() {
+            var audio = new Audio('https://github.com/rishUW/rishuw.github.io/raw/main/audio/webpage-audio.wav');
             if (audio.volume === 0) {
                 audio.volume = 1;
                 volumeIcon.src = 'images/icons/volume.png';
