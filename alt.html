@@ -117,5 +117,19 @@
         <source src="audio/webpage-audio.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
+    <script>
+      var hasPlayed = false;
+      var audio = new Audio(
+        "https://github.com/rishUW/rishuw.github.io/blob/b4c0ccca30049b8b07fa1014823b4710077c1f5e/audio/webpage-audio.mp3"
+      );
+      function playAudio() {
+        // This func will check if the file hasPlayed and then will disable after first interaction.
+        if (!hasPlayed) {
+          audio.play();
+          hasPlayed = true;
+        }
+      }
+      document.addEventListener("click", playAudio);
+    </script>   
 </body>
 </html>
